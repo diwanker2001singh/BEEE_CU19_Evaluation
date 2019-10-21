@@ -1,0 +1,25 @@
+void setup()
+{
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int d=analogRead(A0);
+  int count=0;
+  Serial.print(d);
+  delay(1000);
+  printf("For entry doors");
+     if(d>350)
+     {
+       count++;
+       printf("%d",count);
+     }
+     else
+         printf("For exit door");
+  {
+     count++;
+     printf("%d",count);
+  }
+}
